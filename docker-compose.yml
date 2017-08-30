@@ -17,3 +17,24 @@ services:
     domainname: internal
     ports:
       - "80:80"
+  app1:
+    container_name: app1
+    image: carinamarina/hello-world-app
+    hostname: app1
+    domainname: internal
+    ports:
+      - "5000:5000"
+  app2:
+    container_name: app2
+    image: carinamarina/hello-world-app
+    hostname: app2
+    domainname: internal
+    ports:
+      - "5001:5000"
+  app3:
+    container_name: app3
+    image: carinamarina/hello-world-app
+    hostname: app3
+    domainname: internal
+    ports:
+      - "5002:5000"
